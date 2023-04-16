@@ -1,0 +1,15 @@
+1.Setup ros package
+2. Read articles/ watched youtube videos to understand IMU data
+	https://www.youtube.com/watch?v=20htSO0z-F4 (this video helped a lot)
+3.Made the publisher.py file
+4.Thought that by using multiprocessing i can run two functions a the same time
+	-one funtion will count 10 seconds
+	-the second function will change the acc values in small increments
+5.used the time library
+	found and error in catkin_make :
+	CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  	Could not find a package configuration file provided by "time" with any of
+  	the following names:
+
+    	timeConfig.cmake
+    	time-config.cmake
