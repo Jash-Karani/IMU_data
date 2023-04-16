@@ -13,3 +13,18 @@
 
     	timeConfig.cmake
     	time-config.cmake
+
+6.From the above youtube video i learnt all about the Imu object, and the vector object.. and i practised changing and publishing their values... now all that is left is the acc increment part
+7.using multiprocessing didnt really work ... so i am rethinking the process
+8.I decided to use the time difference as the increment value 
+9.used time.time() to get current time and used initial time to get difference 
+10. simply incremented the values nad published them
+11.didnt get a consistent increase with this method though
+11. next i thought... the loop is runnig at 10 Hz
+	-that means it runs 10 times a seconds
+	-this means that every loop should have the same runtime
+	so i tried to increment values every loop 
+	-this however didnt work as the loop time was a bit different for every iteratio 
+	(i have attached a screenshot of the terminal output that shows the same)
+12. ran out of time .. so i stuck with the initial method
+13. still searching for solution where the increment is the same 
